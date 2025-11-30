@@ -399,4 +399,62 @@ p {
     }
 }
 
+.footer {
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    padding: 1.5rem 1rem;
+    background: var(--color-background);
+    color: var(--color-foreground);
+}
+
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* ensures good mobile behavior */
+    gap: 1rem;
+}
+
+/* Left side: logo + built by */
+.footer-left {
+    display: flex;
+    flex-direction: row;   /* side-by-side */
+    align-items: center;   /* vertically aligned */
+    gap: 0.5rem;           /* spacing between them */
+}
+
+
+.footer-logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.footer-built {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin: 0.1rem 0 0;
+}
+
+/* Right: inline links */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    opacity: 0.6;
+}
+
+.footer-links a {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
 
