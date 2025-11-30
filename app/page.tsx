@@ -12,7 +12,7 @@ export default function Home() {
                     <h1 className="hero-header">
                         Never make a{" "}
                         <TypingHighlight
-                            words={["mistake", "typo", "slip", "blunder", "pitfall"]}
+                            words={["mistake", "typo", "blunder", "pitfall"]}
                             typingSpeed={180}      // slower typing
                             deletingSpeed={90}     // slower deleting
                             pauseDelay={1800}      // wait before deleting and before next word

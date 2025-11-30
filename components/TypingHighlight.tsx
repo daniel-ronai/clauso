@@ -13,9 +13,9 @@ interface TypingHighlightProps {
 export default function TypingHighlight({
                                             words,
                                             className,
-                                            typingSpeed = 200,
-                                            deletingSpeed = 100,
-                                            pauseDelay = 1200,
+                                            typingSpeed = 180,
+                                            deletingSpeed = 90,
+                                            pauseDelay = 1800,
                                         }: TypingHighlightProps) {
     const [text, setText] = useState("");
     const [wordIndex, setWordIndex] = useState(0);
@@ -36,7 +36,6 @@ export default function TypingHighlight({
                     setCharIndex(charIndex + 1);
                 }, typingSpeed);
             } else {
-                // Pause at full word before deleting
                 timeout = setTimeout(() => setTyping(false), pauseDelay);
             }
         } else {
@@ -46,7 +45,6 @@ export default function TypingHighlight({
                     setCharIndex(charIndex - 1);
                 }, deletingSpeed);
             } else {
-                // Pause a bit before typing the next word
                 timeout = setTimeout(() => {
                     setTyping(true);
                     setWordIndex((wordIndex + 1) % words.length);
@@ -59,7 +57,7 @@ export default function TypingHighlight({
 
     return (
         <span className={`highlight-animated ${className || ""}`}>
-      {text}
+      {text || "\u00A0" /* keeps span from collapsing when empty */}
     </span>
     );
 }
