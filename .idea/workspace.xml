@@ -5,50 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd8d36e6-d06f-4326-a1a4-25e64d4b1696" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/new/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dashboard/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/docs/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/pricing/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/sign-in/[[...sign-in]]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/TypingHighlight.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/account/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/docs/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/plans/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/projects/[id]/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/projects/new/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/projects/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sign-in/[[...sign-in]]/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/soundwaves.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/bookmark-filled.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/bookmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/cap.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/check.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/clock.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/coding.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/economics.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/google.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/history.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/language.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/logout.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/maths.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/mic-off.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/mic-on.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/science.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/search.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/cta.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/limit.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/readme/hero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/readme/jsmpro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/readme/thumbnail.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/readme/videokit.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/types/vapi.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764493350810</updated>
-      <workItem from="1764493352647" duration="6161000" />
+      <workItem from="1764493352647" duration="17312000" />
     </task>
     <servers />
   </component>
