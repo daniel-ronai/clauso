@@ -10,7 +10,8 @@ export default function Home() {
         <section className="section">
             <div className="content-container">
                 <div className="content-text">
-                    <div className="bubble-text">🔥 Try it risk-free</div>
+                    <div className="bubble-text"><Link href='/dashboard'>🔥 Try it <span className="gold-shine">risk-free</span></Link></div>
+
                     <h1 className="hero-header">
                         Never make a{" "}
                         <TypingHighlight
@@ -27,9 +28,9 @@ export default function Home() {
                     </p>
                     <div className="cta-buttons">
                         <Link href='/dashboard'>
-                            <button className="cta-button-primary">Go to Dashboard</button>
+                            <button className="cta-button-primary">Open Dashboard</button>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/docs'>
                             <button className="cta-button-secondary">Learn More</button>
                         </Link>
                     </div>

@@ -26,14 +26,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ClerkProvider appearance={{ variables: { colorPrimary: '#000000' }} }>
-            <Navbar />
-            {children}
-            <Footer />
-        </ClerkProvider>
-      </body>
-    </html>
-  );
+  <html lang="en">
+    <body
+      className={`
+        ${geistSans.variable}
+        ${geistMono.variable}
+        antialiased
+        flex flex-col
+        min-h-screen
+      `}
+    >
+      <ClerkProvider appearance={{ variables: { colorPrimary: '#000000' } }}>
+        
+        <Navbar />
+
+        <main className="flex-grow">
+          {children}
+        </main>
+
+        <Footer />
+
+      </ClerkProvider>
+    </body>
+  </html>
+);
+
+
 }
