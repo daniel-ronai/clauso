@@ -942,3 +942,96 @@ p {
     padding: 60px 20px;
   }
 }
+
+/* Add this to your mobile responsive section */
+@media (max-width: 768px) {
+  .contract-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contract-document-wrapper {
+    order: -1;
+    min-height: auto;
+  }
+
+  /* Scale down the document to fit mobile screens */
+  .contract-floating-document {
+    width: 280px;
+    height: 396px;
+    padding: 30px 26px;
+    font-size: 5px;
+    line-height: 1.3;
+  }
+
+  .contract-page-stack {
+    width: 280px;
+    height: 396px;
+  }
+
+  .contract-document-title {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .contract-document-date {
+    font-size: 5.5px;
+  }
+
+  .contract-document-header {
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #000;
+  }
+
+  .contract-paragraph {
+    margin-bottom: 5px;
+    text-indent: 10px;
+  }
+
+  .contract-paragraph strong {
+    font-size: 5.5px;
+  }
+
+  /* Fix highlights for mobile */
+  .contract-highlight-yellow {
+    padding: 0px 1px;
+    background: linear-gradient(180deg, transparent 50%, rgba(255, 235, 59, 0.5) 50%);
+  }
+
+  .contract-highlight-green {
+    padding: 0px 1px;
+    background: linear-gradient(180deg, transparent 50%, rgba(139, 233, 139, 0.5) 50%);
+  }
+
+  .contract-highlight-red {
+    padding: 0px 1px;
+    border-radius: 1px;
+  }
+
+  .contract-floating-document:hover {
+    transform: rotate(-1deg) translateY(-5px);
+  }
+
+  @keyframes contract-float {
+    0%, 100% {
+      transform: rotate(-2deg) translateY(0px);
+    }
+    50% {
+      transform: rotate(-2deg) translateY(-15px);
+    }
+  }
+
+  .contract-section-header {
+    font-size: 36px;
+  }
+
+  .contract-section-subheader {
+    font-size: 18px;
+  }
+
+  .contract-section {
+    padding: 60px 20px;
+  }
+}
