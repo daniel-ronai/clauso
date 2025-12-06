@@ -16,8 +16,8 @@ export default function Navbar() {
             <div className="navbar-links">
                 <Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link>
                 <Link href="/docs" className={pathname === "/docs" ? "active" : ""}>Docs</Link>
-                <Link href="/pricing" className={pathname === "/pricing" ? "active" : ""}>Pricing</Link>
-                <Link href="/dashboard" className={pathname === "/dashboard" ? "active" : ""}>Dashboard</Link>
+                {/*<Link href="/pricing" className={pathname === "/pricing" ? "active" : ""}>Pricing</Link>*/}
+                {/*<Link href="/dashboard" className={pathname === "/dashboard" ? "active" : ""}>Dashboard</Link>*/}
                 <SignedOut>
                     <SignInButton>
                         <button className="btn-sign-in">Sign In</button>

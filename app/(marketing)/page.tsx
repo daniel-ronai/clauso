@@ -98,7 +98,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="cta-section">
+        <section className="cta-section" style={{paddingBottom: "4rem"}}>
             <FinalCTA />
         </section>
     </div>
