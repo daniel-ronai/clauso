@@ -41,14 +41,13 @@ export default function DashboardNav({ name }: { name: string }) {
         </Link>
 
         {/* Notifications */}
-        <button 
-          className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors relative"
-          title="Notifications"
+        <Link 
+          href="/dashboard/subscription"
+          className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
+          title="Subscription"
         >
           <span className="text-2xl">🔔</span>
-          {/* Optional: notification badge */}
-          {/* <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span> */}
-        </button>
+        </Link>
 
         {/* User button from Clerk */}
         <SignedIn>

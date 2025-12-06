@@ -3,7 +3,8 @@ import {PricingTable} from "@clerk/nextjs";
 
 const Pricing = () => {
     return (
-        <div className="main-container">
+        <div className='min-h-[75vh]'>
+            <div className="main-container">
             <section className="pricing-page">
                 <div className="content-container">
                     <div className="content-text">
@@ -15,9 +16,11 @@ const Pricing = () => {
                 </div>
             </section>
             <div className="pricing-tables">
-                <PricingTable />
+                {/*<PricingTable />*/}
+            </div>
             </div>
         </div>
+        
     );
 }
 

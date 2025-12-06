@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import { ClerkProvider } from '@clerk/nextjs';
 import Footer from './Footer';
 import { currentUser } from '@clerk/nextjs/server';
+import { Link } from 'lucide-react';
 
 export const DashboardContent = async () => {
 
@@ -19,6 +20,9 @@ export const DashboardContent = async () => {
                         <p style={{margin: "1rem auto"}}>
                             We're still working on your dashboard. Thank you for your patience.
                         </p>
+                        <a style={{ color: "blue" }} href="/">
+                            Click here to go back to the landing page
+                        </a>
                     </div>
                 </div>
             </section>
