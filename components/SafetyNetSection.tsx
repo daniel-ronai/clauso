@@ -65,15 +65,7 @@ export default function SafetyNetSection() {
           </div>
         </div>
 
-        <div className="safety-footer">
-          <div className="safety-badge">
-            <span className="badge-icon">🛡️</span>
-            <div className="badge-content">
-              <strong>Built to be trusted</strong>
-              <p></p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

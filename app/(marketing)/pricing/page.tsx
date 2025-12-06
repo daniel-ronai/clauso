@@ -20,7 +20,6 @@ const Pricing = () => {
             </div>
             </div>
         </div>
-        
     );
 }
 
