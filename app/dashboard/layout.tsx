@@ -1,3 +1,4 @@
+import { DashboardContent } from "@/components/DashboardContent";
 import DashboardNav from "@/components/DashBoardNav";
 import Sidebar from "@/components/Sidebar";
 import { ClerkProvider } from "@clerk/nextjs";
@@ -25,7 +26,10 @@ export default async function DashboardLayout({ children }: { children: ReactNod
 
         {/* Mobile view */}
         <div className="flex md:hidden w-full">
-          nah
+          <div className="content-container">
+            <DashboardNav name={user?.fullName!} />
+            <DashboardContent />
+          </div>
         </div>
 
       </div>
