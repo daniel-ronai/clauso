@@ -1508,3 +1508,24 @@ p {
     padding: 1.5rem;
   }
 }
+
+/* Make containers full-width on mobile */
+@media (max-width: 768px) {
+  .safety-container,
+  .summary-container,
+  .contract-analysis-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 1rem; /* Keep some breathing room from edges */
+  }
+  
+  .safety-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .safety-card,
+  .summary-box {
+    max-width: 100%;
+    width: 100%;
+  }
+}
