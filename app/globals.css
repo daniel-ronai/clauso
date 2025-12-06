@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
+
+
 
 :root {
     --color-background: #ffffff;
@@ -538,4 +540,17 @@ p {
     opacity: 1;
 }
 
-
+.gold-shine-text {
+    background: linear-gradient(
+        90deg,
+        #d4af37 0%,
+        #f7e27c 20%,
+        #d4af37 40%,
+        #a8862b 60%,
+        #d4af37 80%
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: goldShine 3s linear infinite;
+}

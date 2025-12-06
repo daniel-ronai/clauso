@@ -36,17 +36,9 @@ export default function RootLayout({
         min-h-screen
       `}
     >
-      <ClerkProvider appearance={{ variables: { colorPrimary: '#000000' } }}>
-        
-        <Navbar />
-
         <main className="flex-grow">
           {children}
         </main>
-
-        <Footer />
-
-      </ClerkProvider>
     </body>
   </html>
 );
