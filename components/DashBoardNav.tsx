@@ -12,7 +12,7 @@ export default function DashboardNav({ name }: { name: string }) {
         <Link href="/dashboard">
           <h1 className="text-xl font-bold !text-black">Clauso</h1>
         </Link>
-        <h1>  -  </h1>
+        <h1>  {'>'}  </h1>
         <Link href="/dashboard/account">
           <h1 className="text-xl font-bold !text-black">{name}</h1>
         </Link>

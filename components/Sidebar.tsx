@@ -51,8 +51,8 @@ export default function Sidebar() {
       emoji: '',
       items: [
         { name: 'Feedback', href: '/dashboard/feedback', icon: MessageSquare },
-        { name: 'Privacy', href: '/privacy', icon: Shield },
-        { name: 'Terms', href: '/terms', icon: FileText },
+        { name: 'Privacy', href: '/privacy-policy', icon: Shield },
+        { name: 'Terms', href: '/terms-of-service', icon: FileText },
       ]
     }
   ];
