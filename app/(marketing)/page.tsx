@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import WaitlistForm from "@/components/WaitlistForm";
 import ContractSection from "@/components/ContractSection";
 import SummarySection from "@/components/SummarySection";
+import SafetyNetSection from "@/components/SafetyNetSection";
 
 export default function Home() {
   return (
@@ -57,6 +58,11 @@ export default function Home() {
         <section className="section">
             <div className="content-container">
                 <SummarySection />
+            </div>
+        </section>
+        <section className="section">
+            <div className="content-container">
+                <SafetyNetSection />
             </div>
         </section>
     </div>
