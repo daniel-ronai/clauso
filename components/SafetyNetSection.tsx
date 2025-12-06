@@ -9,7 +9,7 @@ export default function SafetyNetSection() {
 
         <div className="safety-grid">
           <div className="safety-card">
-            <div className="safety-icon">🎯</div>
+            <div className="safety-icon"></div>
             <h3 className="safety-card-title">Complexity Detection</h3>
             <p className="safety-card-description">
               When contracts involve regulatory compliance, IP transfers, or litigation clauses, our AI flags them for human review.
@@ -23,7 +23,7 @@ export default function SafetyNetSection() {
           </div>
 
           <div className="safety-card">
-            <div className="safety-icon">⚡</div>
+            <div className="safety-icon"></div>
             <h3 className="safety-card-title">Risk Threshold Alerts</h3>
             <p className="safety-card-description">
               If potential liability exceeds critical thresholds or involves major business decisions, we recommend professional legal counsel.
@@ -37,7 +37,7 @@ export default function SafetyNetSection() {
           </div>
 
           <div className="safety-card">
-            <div className="safety-icon">🔍</div>
+            <div className="safety-icon"></div>
             <h3 className="safety-card-title">Domain-Specific Recognition</h3>
             <p className="safety-card-description">
               Medical malpractice? Real estate transactions? M&A deals? Our AI recognizes when specialized expertise is required.
@@ -51,7 +51,7 @@ export default function SafetyNetSection() {
           </div>
 
           <div className="safety-card">
-            <div className="safety-icon">💡</div>
+            <div className="safety-icon"></div>
             <h3 className="safety-card-title">Uncertainty Transparency</h3>
             <p className="safety-card-description">
               Unlike other AI tools, we tell you when we're not confident. No guessing with your business at stake.
