@@ -9,7 +9,10 @@ import {
   BarChart3, 
   DollarSign,
   User,
-  Settings
+  Settings,
+  MessageSquare,
+  Shield,
+  FileText
 } from 'lucide-react';
 
 export default function Sidebar() {
@@ -42,6 +45,15 @@ export default function Sidebar() {
         { name: 'Account', href: '/dashboard/account', icon: User },
         { name: 'Settings', href: '/dashboard/settings', icon: Settings },
       ]
+    },
+    {
+      title: 'Support',
+      emoji: '',
+      items: [
+        { name: 'Feedback', href: '/dashboard/feedback', icon: MessageSquare },
+        { name: 'Privacy', href: '/privacy', icon: Shield },
+        { name: 'Terms', href: '/terms', icon: FileText },
+      ]
     }
   ];
 
@@ -49,7 +61,7 @@ export default function Sidebar() {
     <aside className="w-[10%] min-w-[200px] bg-black border-r border-gray-800 flex flex-col h-screen">
       {/* Logo/Brand */}
       <div className="px-4 py-6 mt-4 border-b border-gray-800">
-        <h1 className="text-lg font-semibold text-white">YourSaaS</h1>
+        <h1 className="text-lg font-semibold text-white">Clauso</h1>
       </div>
 
       {/* Navigation Sections */}
@@ -71,7 +83,7 @@ export default function Sidebar() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}
+                    style={{ paddingTop: '0.625rem', paddingBottom: '0.625rem' }}
                     className={`
                       flex items-center gap-3 px-4 rounded-lg
                       transition-all duration-150 group w-[80%]
@@ -89,18 +101,6 @@ export default function Sidebar() {
             </div>
           </div>
         ))}
-
-        {/* Feedback Button - inside nav for even spacing */}
-        <div className="px-0 flex justify-center">
-          <Link
-            href="/dashboard/feedback"
-            style={{ paddingTop: '1.25rem', paddingBottom: '1.25rem' }}
-            className="flex items-center gap-3 px-4 rounded-lg !text-white hover:bg-gray-900 transition-all duration-150 w-[80%]"
-          >
-            <span className="text-lg">💬</span>
-            <span className="text-base font-medium">Feedback</span>
-          </Link>
-        </div>
       </nav>
     </aside>
   );
