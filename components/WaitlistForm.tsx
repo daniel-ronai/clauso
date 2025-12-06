@@ -5,6 +5,7 @@ export default function WaitlistForm() {
   const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isFocused, setIsFocused] = useState(false);
 
   const isValidEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -77,16 +78,20 @@ export default function WaitlistForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onKeyPress={handleKeyPress}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
             disabled={isLoading}
             style={{
               width: '100%',
               padding: '0.5rem 0.75rem',
-              border: '1px solid black',
+              border: '2px solid black',
               borderRadius: '0.375rem',
               fontSize: '1rem',
               outline: 'none',
               opacity: isLoading ? 0.5 : 1,
-              cursor: isLoading ? 'not-allowed' : 'text'
+              cursor: isLoading ? 'not-allowed' : 'text',
+              boxShadow: isFocused ? '0 0 0 4px rgba(212, 175, 55, 0.15), 0 0 12px rgba(212, 175, 55, 0.25)' : 'none',
+              transition: 'box-shadow 0.2s ease'
             }}
           />
           <p style={{ fontSize: '0.75rem', color: '#4b5563' }}>
