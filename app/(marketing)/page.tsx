@@ -79,9 +79,9 @@ export default function Home() {
         <section className="section">
             <div className="hook-container" style={{paddingBottom: "8rem"}}>
                 <p className="hook-text">
-                    Most contracts are fine. <br />
-                    It's the ones that aren't <br />
-                    <span className="hook-emphasis">that we're built for.</span>
+                    Read 50 pages in 30 seconds. <br />
+                    Catch what matters in plain English. <br />
+                    <span className="hook-emphasis">Sign with actual confidence.</span>
                 </p>
             </div>
         </section>
