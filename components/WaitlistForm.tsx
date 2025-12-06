@@ -2,35 +2,53 @@ import { useState } from 'react';
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState('idle');
   const [message, setMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!email || !email.includes('@')) {
       setStatus('error');
       setMessage('Please enter a valid email address');
       return;
     }
 
-    // Replace this with your actual API endpoint
+    setIsLoading(true);
+    setStatus('idle');
+    setMessage('');
+
     try {
-      // fetch('/api/waitlist', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email })
-      // });
+      const response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email })
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setStatus('error');
+        setMessage(data.error || 'Something went wrong. Please try again.');
+        setIsLoading(false);
+        return;
+      }
       
       setStatus('success');
       setMessage('Successfully joined the waitlist!');
       setEmail('');
     } catch (error) {
+      console.error('Waitlist submission error:', error);
       setStatus('error');
       setMessage('Something went wrong. Please try again.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter' && !isLoading) {
       handleSubmit();
     }
   };
@@ -45,13 +63,16 @@ export default function WaitlistForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onKeyPress={handleKeyPress}
+            disabled={isLoading}
             style={{
               width: '100%',
               padding: '0.5rem 0.75rem',
               border: '1px solid black',
               borderRadius: '0.375rem',
               fontSize: '1rem',
-              outline: 'none'
+              outline: 'none',
+              opacity: isLoading ? 0.5 : 1,
+              cursor: isLoading ? 'not-allowed' : 'text'
             }}
           />
           <p style={{ fontSize: '0.75rem', color: '#4b5563' }}>
@@ -69,9 +90,14 @@ export default function WaitlistForm() {
 
         <button 
           onClick={handleSubmit}
+          disabled={isLoading}
           className="cta-button-primary"
+          style={{
+            opacity: isLoading ? 0.5 : 1,
+            cursor: isLoading ? 'not-allowed' : 'pointer'
+          }}
         >
-          Join Waitlist
+          {isLoading ? 'Joining...' : 'Join Waitlist'}
         </button>
 
         {status !== 'idle' && (
@@ -79,7 +105,8 @@ export default function WaitlistForm() {
             padding: '1rem',
             border: status === 'success' ? '1px solid black' : '1px solid #ef4444',
             borderRadius: '0.375rem',
-            color: status === 'error' ? '#ef4444' : 'inherit'
+            color: status === 'error' ? '#ef4444' : 'inherit',
+            fontSize: '0.875rem'
           }}>
             {message}
           </div>

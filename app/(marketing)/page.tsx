@@ -22,7 +22,7 @@ export default function Home() {
                     <h1 className="hero-header">
                         Never let{" "}
                         <TypingHighlight
-                            words={["risk", "expense", "liability"]}
+                            words={["risk", "loss", "liability"]}
                             typingSpeed={180}      // slower typing
                             deletingSpeed={90}     // slower deleting
                             pauseDelay={1800}      // wait before deleting and before next word
