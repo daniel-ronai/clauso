@@ -1,0 +1,55 @@
+'use client';
+
+import Link from 'next/link';
+import { SignedIn, UserButton } from '@clerk/nextjs';
+
+export default function DashboardNav() {
+  return (
+    <nav style={{ paddingLeft: '3rem', paddingRight: '3rem' }} className="h-16 bg-white border-b border-black flex items-center justify-between">
+      {/* Logo on the left */}
+      <div className="flex items-center">
+        <Link href="/dashboard">
+          <h1 className="text-xl font-bold !text-black">Clauso</h1>
+        </Link>
+      </div>
+
+      {/* Right side icons */}
+      <div className="flex items-center gap-6">
+        {/* Help/Docs */}
+        <Link 
+          href="/docs"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
+          title="Documentation"
+        >
+          <span className="text-2xl">❓</span>
+        </Link>
+
+        {/* Subscription */}
+        <Link 
+          href="/dashboard/subscription"
+          className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors"
+          title="Subscription"
+        >
+          <span className="text-2xl">🚀</span>
+        </Link>
+
+        {/* Notifications */}
+        <button 
+          className="w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors relative"
+          title="Notifications"
+        >
+          <span className="text-2xl">🔔</span>
+          {/* Optional: notification badge */}
+          {/* <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span> */}
+        </button>
+
+        {/* User button from Clerk */}
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+      </div>
+    </nav>
+  );
+}

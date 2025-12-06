@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 export const DashboardContent = () => {
   return (
-            <div className = "min-h-screen flex flex-col">
+            <div className = "h-full flex flex-col">
               <div className="hidden sm:flex">
                  yo wassup
               </div>

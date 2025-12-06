@@ -20,7 +20,7 @@ export default function Sidebar() {
   const sections = [
     {
       title: 'Organization',
-      emoji: '🏢',
+      emoji: '',
       items: [
         { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
         { name: 'Upload', href: '/dashboard/new', icon: Upload },
@@ -28,16 +28,16 @@ export default function Sidebar() {
     },
     {
       title: 'My Plan',
-      emoji: '💳',
+      emoji: '',
       items: [
-        { name: 'Subscription', href: '/dashboard/subscription', icon: CreditCard },
         { name: 'Usage', href: '/dashboard/usage', icon: BarChart3 },
+        { name: 'Subscription', href: '/dashboard/subscription', icon: CreditCard },
         { name: 'Payments', href: '/dashboard/payments', icon: DollarSign },
       ]
     },
     {
       title: 'Utilities',
-      emoji: '⚙️',
+      emoji: '',
       items: [
         { name: 'Account', href: '/dashboard/account', icon: User },
         { name: 'Settings', href: '/dashboard/settings', icon: Settings },
