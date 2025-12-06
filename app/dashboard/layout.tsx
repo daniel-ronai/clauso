@@ -1,9 +1,13 @@
 import DashboardNav from "@/components/DashBoardNav";
 import Sidebar from "@/components/Sidebar";
 import { ClerkProvider } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs/server";
 import { ReactNode } from "react";
 
-export default function DashboardLayout({ children }: { children: ReactNode }) {
+export default async function DashboardLayout({ children }: { children: ReactNode }) {
+
+    const user = await currentUser();
+
   return (
     <ClerkProvider>
       <div className="flex h-screen w-screen">
@@ -12,7 +16,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         <div className="hidden md:flex w-full">
           <Sidebar />
           <div className="flex-1 flex flex-col">
-            <DashboardNav />
+            <DashboardNav name={user?.fullName!} />
             <main className="flex-1 overflow-auto p-6">
               {children}
             </main>
@@ -23,7 +27,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         <div className="flex md:hidden w-full">
           nah
         </div>
-        
+
       </div>
     </ClerkProvider>
   );
