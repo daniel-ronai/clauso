@@ -6,6 +6,7 @@ import TypingHighlight from "@/components/TypingHighlight";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WaitlistForm from "@/components/WaitlistForm";
+import ContractSection from "@/components/ContractSection";
 
 export default function Home() {
   return (
@@ -49,6 +50,7 @@ export default function Home() {
         </section>
         <section className="section">
             <div className="content-container">
+                <ContractSection />
             </div>
         </section>
     </div>

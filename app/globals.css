@@ -659,3 +659,289 @@ p {
     @apply bg-background text-foreground;
     }
 }
+
+/* Contract Section Styles */
+/* Contract Section Styles */
+.contract-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.contract-container {
+  max-width: 1400px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Document Styles */
+.contract-document-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+
+.contract-floating-document {
+  position: relative;
+  width: 420px;
+  height: 594px; /* A4 ratio */
+  background: white;
+  border: 1px solid #d0d0d0;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 50px 45px;
+  transform: rotate(-3deg);
+  animation: contract-float 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 9px;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.contract-floating-document:hover {
+  transform: rotate(-1deg) translateY(-10px);
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.15),
+    0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes contract-float {
+  0%, 100% {
+    transform: rotate(-3deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(-3deg) translateY(-20px);
+  }
+}
+
+.contract-document-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #000;
+}
+
+.contract-document-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.contract-document-date {
+  font-size: 8px;
+  color: #555;
+  font-style: italic;
+}
+
+.contract-document-body {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.contract-paragraph {
+  margin-bottom: 8px;
+  text-align: justify;
+  text-indent: 15px;
+}
+
+.contract-paragraph strong {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 8.5px;
+  letter-spacing: 0.3px;
+}
+
+.contract-highlight-yellow {
+  background: linear-gradient(180deg, transparent 40%, rgba(255, 235, 59, 0.5) 40%);
+  padding: 1px 2px;
+  font-weight: 500;
+}
+
+.contract-highlight-green {
+  background: linear-gradient(180deg, transparent 40%, rgba(139, 233, 139, 0.5) 40%);
+  padding: 1px 2px;
+  font-weight: 500;
+}
+
+.contract-highlight-red {
+    background-color: #ffcdd2;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-weight: 500;
+    }
+
+/* Content Styles */
+.contract-content-wrapper {
+  padding: 20px 0;
+}
+
+.contract-section-header {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+.contract-section-subheader {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.contract-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contract-benefit-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.contract-benefit-icon {
+  width: 32px;
+  height: 32px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contract-benefit-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.contract-benefit-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contract-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .contract-document-wrapper {
+    order: -1;
+    min-height: auto;
+  }
+
+.contract-floating-document {
+  position: relative;
+  width: 420px;
+  height: 594px;
+  background: white;
+  border: 1px solid #d0d0d0;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 50px 45px;
+  transform: rotate(-3deg);
+  animation: contract-float 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  overflow: hidden; /* This stops scrolling */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 8px; /* Made smaller so text fits */
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+
+  .contract-floating-document:hover {
+    transform: rotate(-1deg) translateY(-5px);
+  }
+
+  @keyframes contract-float {
+    0%, 100% {
+      transform: rotate(-2deg) translateY(0px);
+    }
+    50% {
+      transform: rotate(-2deg) translateY(-15px);
+    }
+  }
+
+  .contract-section-header {
+    font-size: 36px;
+  }
+
+  .contract-section-subheader {
+    font-size: 18px;
+  }
+
+  .contract-section {
+    padding: 60px 20px;
+  }
+}
+
+/* Add these new styles for the stacked pages effect */
+.contract-page-stack {
+  position: absolute;
+  width: 420px;
+  height: 594px;
+  background: white;
+  border: 1px solid #d0d0d0;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contract-page-2 {
+  transform: rotate(-4deg) translateY(8px) translateX(-4px);
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.contract-page-3 {
+  transform: rotate(-5deg) translateY(16px) translateX(-8px);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+/* Update the main document z-index */
+.contract-floating-document {
+  position: relative;
+  width: 420px;
+  height: 594px;
+  background: white;
+  border: 1px solid #d0d0d0;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 45px 40px;
+  transform: rotate(-3deg);
+  animation: contract-float 6s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 7.5px;
+  line-height: 1.35;
+  color: #1a1a1a;
+  z-index: 2; /* Add this */
+}
