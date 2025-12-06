@@ -1,10 +1,9 @@
+import { DashboardContent } from '@/components/DashboardContent';
 import React from 'react';
 
 const Session = () => {
     return (
-        <div>
-            Session
-        </div>
+        <DashboardContent />
     );
 }
 

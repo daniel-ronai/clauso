@@ -1,10 +1,9 @@
+import { DashboardContent } from '@/components/DashboardContent';
 import React from 'react';
 
 const NewSession = () => {
     return (
-        <div>
-            NewSession
-        </div>
+        <DashboardContent />
     );
 }
 

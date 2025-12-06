@@ -9,7 +9,7 @@ export default function DashboardNav({ name }: { name: string }) {
     <nav style={{ paddingLeft: '3rem', paddingRight: '3rem' }} className="h-16 bg-white border-b border-black flex items-center justify-between">
       {/* Logo on the left */}
       <div className="flex items-center gap-4">
-        <Link href="/dashboard">
+        <Link href="/">
           <h1 className="text-xl font-bold !text-black">Clauso</h1>
         </Link>
         <h1>  {'>'}  </h1>
