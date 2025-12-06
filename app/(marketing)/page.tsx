@@ -15,7 +15,7 @@ export default function Home() {
                 <div className="content-text">
                     <div className="bubble-text">
                         <Link href='/#waitlist-form'>
-                            🔥 Secure your spot <span className="gold-shine">today</span>
+                            🔥 Join the <span className="gold-shine">waitlist</span>
                         </Link>
                     </div>
 
