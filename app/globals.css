@@ -1487,3 +1487,24 @@ p {
   }
 }
 
+/* Safety Net Cards - Mobile */
+@media (max-width: 768px) {
+  .safety-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .safety-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Summary Box - Mobile */
+@media (max-width: 768px) {
+  .summary-box {
+    max-width: 100%;
+    width: 100%;
+    padding: 1.5rem;
+  }
+}
