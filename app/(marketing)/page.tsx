@@ -14,7 +14,7 @@ export default function Home() {
             <div className="content-container">
                 <div className="content-text">
                     <div className="bubble-text">
-                        <Link href='/dashboard'>
+                        <Link href='/#waitlist-form'>
                             🔥 Secure your spot <span className="gold-shine">today</span>
                         </Link>
                     </div>
@@ -41,7 +41,9 @@ export default function Home() {
                             <button className="cta-button-secondary">Learn More</button>
                         </Link>
                     </div>*/}
-                    <WaitlistForm />
+                    <div id="waitlist-form">
+                        <WaitlistForm />
+                    </div>
                 </div>
             </div>
         </section>

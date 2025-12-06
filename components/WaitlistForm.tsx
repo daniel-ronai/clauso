@@ -6,16 +6,30 @@ export default function WaitlistForm() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = async () => {
-    if (!email || !email.includes('@')) {
+    // Clear any previous messages
+    setMessage('');
+    setStatus('idle');
+
+    // Validate email format
+    if (!email || email.trim() === '') {
+      setStatus('error');
+      setMessage('Please enter an email address');
+      return;
+    }
+
+    if (!isValidEmail(email.trim())) {
       setStatus('error');
       setMessage('Please enter a valid email address');
       return;
     }
 
     setIsLoading(true);
-    setStatus('idle');
-    setMessage('');
 
     try {
       const response = await fetch('/api/waitlist', {
