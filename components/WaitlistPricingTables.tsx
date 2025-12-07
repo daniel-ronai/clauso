@@ -9,7 +9,7 @@ export default function WaitlistPricingTables() {
 
   const prices = {
     pro: { monthly: 39, annual: 31 },
-    team: { monthly: 119, annual: 95 }
+    team: { monthly: 119, annual: 99 }
   };
 
   const handleJoinWaitlist = () => {

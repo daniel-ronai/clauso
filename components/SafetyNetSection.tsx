@@ -17,7 +17,7 @@ export default function SafetyNetSection() {
             <div className="safety-example">
               <span className="example-label">Example Alert:</span>
               <p className="example-text">
-                "⚠️ This contract includes intellectual property assignment clauses. We recommend consulting an IP attorney."
+                ⚠️ This contract includes intellectual property assignment clauses. We recommend consulting an IP attorney.
               </p>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function SafetyNetSection() {
             <div className="safety-example">
               <span className="example-label">Example Alert:</span>
               <p className="example-text">
-                "⚠️ Total liability exposure: $500K+. This warrants review by a licensed attorney."
+                ⚠️ Total liability exposure: $500K+. This warrants review by a licensed attorney.
               </p>
             </div>
           </div>
@@ -45,7 +45,7 @@ export default function SafetyNetSection() {
             <div className="safety-example">
               <span className="example-label">Example Alert:</span>
               <p className="example-text">
-                "⚠️ This appears to be a commercial lease agreement. Consider consulting a real estate attorney."
+                ⚠️ This appears to be a commercial lease agreement. Consider consulting a real estate attorney.
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function SafetyNetSection() {
             <div className="safety-example">
               <span className="example-label">Example Alert:</span>
               <p className="example-text">
-                "⚠️ This clause contains ambiguous language we cannot confidently interpret. Legal review recommended."
+                ⚠️ This clause contains ambiguous language we cannot confidently interpret. Legal review recommended.
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@ const Docs = () => {
                         <div className="bubble-text">📄 Documentation</div>
                         <h1 className="hero-header" style={{marginBottom: '3rem'}}>Welcome to <span className="zigzag-underline">our Docs</span></h1>
                         <p className='legal-text'>
-                             Hey there! 👋 We're building Clauso, and we're genuinely excited to have you here. Whether you're a freelancer staring down a 47-page contract at 11 PM, a consultant who's tired of paying lawyers $400 every time a client sends an NDA, or a founder who just wants to know if that partnership agreement is going to bite you later—this is for you.
+                             Hey there! 👋 We're building Clauso, and we're genuinely excited to have you here. Whether you're a freelancer staring down a 47-page contract at 11 PM, a consultant who's tired of paying lawyers $400 every time a client sends an NDA, or a founder who just wants to know if that partnership agreement is going to bite you later - this is for you.
                         </p>
 
                         <p className='legal-text'>
@@ -17,7 +17,7 @@ const Docs = () => {
                         </p>
 
                         <p className='legal-text'>
-                            Clauso is an AI-powered contract analyzer that reads the fine print so you don't have to. Upload a contract, and within seconds, our AI breaks down exactly what you're agreeing to—the risks, the red flags, the stuff buried on page 23 that could cost you thousands.
+                            Clauso is an AI-powered contract analyzer that reads the fine print so you don't have to. Upload a contract, and within seconds, our AI breaks down exactly what you're agreeing to - the risks, the red flags, the stuff buried on page 23 that could cost you thousands.
                         </p>
 
                         <p className='legal-text'>
