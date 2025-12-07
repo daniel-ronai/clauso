@@ -8,8 +8,8 @@ export default function WaitlistPricingTables() {
   const [isAnnual, setIsAnnual] = useState(false);
 
   const prices = {
-    pro: { monthly: 29, annual: 19 },
-    team: { monthly: 99, annual: 79 }
+    pro: { monthly: 39, annual: 31 },
+    team: { monthly: 119, annual: 95 }
   };
 
   const handleJoinWaitlist = () => {
@@ -63,7 +63,7 @@ export default function WaitlistPricingTables() {
             <span className="waitlist-toggle-label">Billed annually</span>
           </div>
           <ul className="waitlist-features">
-            <li>15 contracts per month</li>
+            <li>20 contracts per month</li>
             <li>Deep risk analysis</li>
             <li>Clause-by-clause breakdown</li>
             <li>Priority support</li>
