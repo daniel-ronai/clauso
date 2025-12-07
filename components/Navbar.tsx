@@ -37,7 +37,7 @@ export default function Navbar() {
             <div className={`mobile-menu ${isOpen ? "show" : ""}`}>
                 <Link href="/" className="active" onClick={() => setIsOpen(false)}>Home</Link>
                 <Link href="/docs" onClick={() => setIsOpen(false)}>Docs</Link>
-                <Link href="/term-of-service" onClick={() => setIsOpen(false)}>Terms</Link>
+                <Link href="/terms-of-service" onClick={() => setIsOpen(false)}>Terms</Link>
                 <Link href="/privacy-policy" onClick={() => setIsOpen(false)}>Privacy</Link>
                 {/*<Link href="/pricing" onClick={() => setIsOpen(false)}>Pricing</Link>
                 <Link href="/dashboard" onClick={() => setIsOpen(false)}>Dashboard</Link>*/}
