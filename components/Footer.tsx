@@ -10,15 +10,15 @@ export default function Footer() {
 
                 <div className="footer-left">
                     <Link href="https://x.com/daniel_ronaii" target="_blank" rel="noopener noreferrer">
-                        <p className="footer-built">Built and founded by Daniel</p>
+                        <p className="footer-built">Built and founded by <u>Daniel</u></p>
                     </Link>
                 </div>
 
                 <div className="footer-links">
                     <Link href="/">Home</Link>
                     <Link href="/docs">Docs</Link>
-                    <Link href="/pricing">Pricing</Link>
-                    <Link href="/dashboard">Dashboard</Link>
+                    {/*<Link href="/pricing">Pricing</Link>
+                    <Link href="/dashboard">Dashboard</Link>*/}
                     <Link href="/privacy-policy">Privacy</Link>
                     <Link href="/terms-of-service">Terms</Link>
                 </div>

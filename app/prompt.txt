@@ -1,0 +1,67 @@
+# X Reply Generator Prompt
+
+Copy this prompt and use it daily. Just paste it with the post you want to reply to.
+
+---
+
+## THE PROMPT:
+
+```
+I'm building Clauso - a SaaS that analyzes contracts for risks and helps people catch problematic clauses before signing. I'm in the waitlist/validation stage.
+
+My X strategy: Be a warm, authentic founder (not salesy). Make replies that add value and make people curious enough to check my profile.
+
+Here's the post I want to reply to:
+[PASTE POST HERE]
+
+FIRST: Evaluate if this post is worth replying to. 
+
+SKIP if:
+- I have nothing genuine or valuable to add
+- It's too far from my niche (SaaS, contracts, legal, founder journey, validation)
+- A reply would feel forced or salesy
+- It's engagement bait with no substance
+- I can't naturally mention my experience without pitching
+
+If you think I should SKIP, just say "SKIP - [brief reason]" and nothing else.
+
+If it's worth replying to, write me 2-3 reply options that:
+1. Add genuine value or a unique perspective
+2. Subtly hint at my SaaS journey (but don't pitch)
+3. Sound like someone worth following
+4. Are conversational and authentic (not corporate)
+5. Make people think "who is this person?" and click my profile
+
+Keep replies 2-4 sentences max. Use my voice: honest, a bit self-deprecating, specific examples over generic advice.
+```
+
+---
+
+## HOW TO USE IT:
+
+**Daily flow:**
+1. Find 5-8 posts in your niche (SaaS building, contracts, legal tech, founder struggles)
+2. Paste this prompt + the post into Claude
+3. Pick the reply that feels most natural
+4. Post it
+5. Repeat
+
+**Posts to look for:**
+- SaaS founders talking about validation
+- People complaining about contracts/legal stuff  
+- Startup struggles and wins
+- "How do you handle X?" questions
+- Launch announcements (congratulate + share your journey)
+
+---
+
+## TIPS:
+
+- Don't use the prompt for EVERY reply (mix in some natural quick responses too)
+- If a reply feels forced, skip that post
+- Best replies come from posts where you actually have something real to say
+- Track which replies get the most engagement and refine
+
+---
+
+**Save this prompt somewhere easy to access (Notes app, etc.) so you can use it daily.**

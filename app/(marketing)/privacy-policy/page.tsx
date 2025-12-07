@@ -8,119 +8,24 @@ const PrivacyPolicy = () => {
                     <div className="content-text">
                         <div className="bubble-text">📄 Legals</div>
                         <h1 className="hero-header">Privacy Policy</h1>
-                        <div style={{textAlign: "left"}}>
-                            <p><strong>Privacy Policy</strong></p>
+                        <p>Last updated: 2025.12.07.</p>
+                        <div>
 
-                            <p>Last updated: 2025.11.30</p>
+                            <p className="legal-text">This privacy policy explains how Clauso collects, uses, and protects your personal information when you join our waitlist or create an account. By using our service, you agree to the collection and use of information in accordance with this policy.</p>
 
-                            <p>
-                                This Privacy Policy explains how Clausо ("we", "our", "us") collects, uses, and protects
-                                your
-                                information. Clausо is currently an early-stage MVP and may change as the product
-                                evolves.
-                                By using Clausо, you agree to the practices described here.
-                            </p>
+                            <p className="legal-text">We collect your email address when you join our waitlist. This information is stored in our database and is used solely to notify you about product updates, launch information, and waitlist-related communications. We may also collect account information if you choose to create an account through our authentication provider, Clerk. This may include your name, email address, and authentication credentials.</p>
 
-                            <p><strong>1. Information We Collect</strong></p>
+                            <p className="legal-text">Your email address submitted through the waitlist is stored in Supabase. Account information created through Clerk is managed and secured by Clerk's authentication system. We do not sell, trade, or rent your personal information to third parties. Your data is used exclusively for the purpose of managing our waitlist and providing you with updates about Clauso.</p>
 
-                            <p><strong>a. Information you provide</strong></p>
-                            <p>
-                                • Uploaded documents or contract text (if you choose to upload)<br/>
-                                • Account information such as email (via Clerk authentication)<br/>
-                                • Any content you submit while using the platform
-                            </p>
+                            <p className="legal-text">We work with third-party service providers to help us operate our waitlist and authentication systems. Specifically, we use Supabase for data storage and Clerk for account authentication and management. These providers have access to your information only to perform specific tasks on our behalf and are obligated to protect your information.</p>
 
-                            <p><strong>b. Automatically collected information</strong></p>
-                            <p>
-                                • Basic device and usage data (browser type, device type, timestamps)<br/>
-                                • Error logs for debugging and improving the service
-                            </p>
+                            <p className="legal-text">We implement reasonable security measures to protect your information from unauthorized access, alteration, or destruction. However, please be aware that no method of electronic storage is completely secure, and we cannot guarantee absolute security of your data.</p>
 
-                            <p><strong>c. Third-party services</strong></p>
-                            <p>
-                                We use third-party providers such as Clerk (authentication), Supabase (database), and
-                                OpenAI/Deepgram (AI processing). These services may process limited data as required to
-                                operate Clausо.
-                            </p>
+                            <p className="legal-text">You have the right to access, update, or delete your personal information at any time. If you wish to unsubscribe from our waitlist, update your information, or have your data removed from our systems, please contact us at hello@danielsends.email and we will process your request promptly.</p>
 
-                            <p><strong>2. How We Use Your Information</strong></p>
+                            <p className="legal-text">We may update this privacy policy from time to time to reflect changes in our practices or for legal and regulatory reasons. We will notify waitlist members of any material changes by email. Your continued use of our service after such modifications constitutes your acceptance of the updated policy.</p>
 
-                            <p>
-                                We use the information we collect to:
-                            </p>
-
-                            <p>
-                                • Provide contract analysis features<br/>
-                                • Improve accuracy and reliability of AI results<br/>
-                                • Maintain user accounts<br/>
-                                • Deliver core functionality of the platform<br/>
-                                • Fix bugs, improve performance, and secure the service
-                            </p>
-
-                            <p>
-                                Uploaded documents are used <strong>only</strong> to generate analysis results. We do
-                                not sell or share
-                                your data with advertisers or external parties.
-                            </p>
-
-                            <p><strong>3. Storage & Security</strong></p>
-
-                            <p>
-                                All user data is stored securely using Supabase and industry-standard encryption.
-                                However,
-                                because Clausо is an MVP, there may be occasional changes in infrastructure or
-                                performance.
-                            </p>
-
-                            <p>
-                                We take security seriously, but no system is entirely immune to risks. You use Clausо at
-                                your own discretion.
-                            </p>
-
-                            <p><strong>4. AI Processing</strong></p>
-
-                            <p>
-                                Contract text and user inputs may be sent to AI providers such as OpenAI and Deepgram
-                                solely for processing your request. We do not allow these providers to train models on
-                                your
-                                data.
-                            </p>
-
-                            <p><strong>5. Cookies</strong></p>
-
-                            <p>
-                                Clausо may use essential cookies required for authentication and session management.
-                                We do not use tracking or advertising cookies.
-                            </p>
-
-                            <p><strong>6. Data Retention</strong></p>
-
-                            <p>
-                                We keep your data only as long as necessary to provide the service. You may request
-                                deletion of your account or uploaded content at any time by contacting us.
-                            </p>
-
-                            <p><strong>7. Children's Privacy</strong></p>
-
-                            <p>
-                                Clausо is not intended for use by individuals under 18. We do not knowingly collect data
-                                from minors.
-                            </p>
-
-                            <p><strong>8. Changes to This Policy</strong></p>
-
-                            <p>
-                                As the product evolves, this Privacy Policy may be updated. We will update the “Last
-                                Updated” date when changes are made.
-                            </p>
-
-                            <p><strong>9. Contact</strong></p>
-
-                            <p>
-                                For questions about this Privacy Policy, contact:<br/>
-                                <strong>Daniel Ronai</strong><br/>
-                                <a href="mailto:hello@danielsends.email">hello@danielsends.email</a>
-                            </p>
+                            <p className="legal-text">If you have any questions or concerns about this privacy policy or how we handle your personal information, please contact us at hello@danielsends.email. We are committed to addressing your concerns and ensuring your privacy is protected.</p>
 
                         </div>
                     </div>

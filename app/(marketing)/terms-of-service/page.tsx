@@ -8,88 +8,32 @@ const TermsOfService = () => {
                     <div className="content-text">
                         <div className="bubble-text">📄 Legals</div>
                         <h1 className="hero-header">Terms of Service</h1>
-                        <div style={{ textAlign: "left" }}>
-                            <p><strong>Terms of Service</strong></p>
+                        <p>Last updated: 2025.12.07.</p>
+                        <div>
 
-                            <p>Last updated: 2025.11.30</p>
+                            <p className="legal-text">These Terms of Service govern your access to and use of the Clauso waitlist and website. By joining our waitlist, creating an account, or using our website, you agree to be bound by these terms. If you do not agree to these terms, please do not use our service.</p>
 
-                            <p>
-                                Welcome to Clausо. By accessing or using our service, you agree to comply with and be
-                                bound by
-                                these Terms of Service. If you do not agree, please do not use the service.
-                            </p>
+                            <p className="legal-text">By joining the Clauso waitlist, you will receive email updates about our product development, launch announcements, and related communications. Waitlist members may receive access to discounted pricing when we launch, though such access is not guaranteed and will be determined based on availability at the time of launch. The first subscribers at launch may receive priority access or special pricing, but this is offered at our sole discretion.</p>
 
-                            <p><strong>1. Use of Service</strong></p>
+                            <p className="legal-text">You must be at least 18 years of age to use our service. By joining our waitlist or creating an account, you represent and warrant that you are at least 18 years old. We reserve the right to request proof of age and to terminate accounts that do not meet this requirement.</p>
 
-                            <p>
-                                Clausо provides AI-powered contract analysis tools. You agree to use the service only
-                                for
-                                lawful purposes and in accordance with these terms.
-                            </p>
+                            <p className="legal-text">Clauso is a contract analysis tool and does not provide legal advice. Our service is designed to help identify potential risks and issues in contracts, but it should not be relied upon as a substitute for professional legal counsel. We strongly recommend that you consult with a qualified attorney for any legal matters or questions regarding contracts. Any analysis, suggestions, or information provided by Clauso is for informational purposes only.</p>
 
-                            <p><strong>2. Account Responsibilities</strong></p>
+                            <p className="legal-text">We make no warranties or guarantees regarding the accuracy, completeness, or reliability of any analysis or information provided by our service. You acknowledge that contract analysis involves complex legal interpretation and that our AI-powered tool may not identify all risks or issues. We are not liable for any damages, losses, or consequences resulting from your use of our service or reliance on any information provided by Clauso.</p>
 
-                            <p>
-                                If you create an account, you are responsible for maintaining the security of your
-                                account and
-                                any activities under it. Notify us immediately of any unauthorized use.
-                            </p>
+                            <p className="legal-text">Pricing information displayed on our website is provided for informational purposes only and is subject to change at any time without notice. When we launch, we reserve the right to modify our pricing structure, subscription plans, and features. Any pricing shown during the waitlist period is an estimate and does not constitute a binding commitment or guarantee.</p>
 
-                            <p><strong>3. Intellectual Property</strong></p>
+                            <p className="legal-text">By using our website, joining our waitlist, or providing your email address, you consent to receive emails from us regarding product updates, launch information, and service-related communications. You also agree that your usage data may be collected and analyzed anonymously for statistical purposes to improve our service. You may unsubscribe from our communications at any time by contacting us at hello@danielsends.email.</p>
 
-                            <p>
-                                All content, designs, and technology provided by Clausо are owned by Clausо and
-                                protected by
-                                copyright, trademark, and other intellectual property laws. You may not reproduce,
-                                distribute,
-                                or create derivative works without permission.
-                            </p>
+                            <p className="legal-text">You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree not to use our service for any unlawful purposes or in any way that violates these terms. Prohibited activities include but are not limited to uploading illegal content, attempting to bypass security measures, or abusing our service in any manner.</p>
 
-                            <p><strong>4. User Content</strong></p>
+                            <p className="legal-text">We reserve the right to terminate or suspend your account and access to our service at any time, without prior notice, if we believe you have violated these terms or engaged in prohibited activities. You may request deletion of your personal information and account at any time by contacting us at hello@danielsends.email, and we will process your request in accordance with our Privacy Policy.</p>
 
-                            <p>
-                                You retain ownership of documents you upload. By using Clausо, you grant us a limited
-                                license
-                                to process your content solely for the purpose of providing contract analysis.
-                            </p>
+                            <p className="legal-text">We may update these Terms of Service from time to time to reflect changes in our practices, legal requirements, or service offerings. Material changes will be communicated to waitlist members via email. Your continued use of our service after such modifications constitutes your acceptance of the updated terms.</p>
 
-                            <p><strong>5. Limitations of Liability</strong></p>
+                            <p className="legal-text">These terms are governed by and construed in accordance with the laws of Hungary. Any disputes arising from or relating to these terms or your use of our service shall be subject to the exclusive jurisdiction of the courts of Hungary. By using our service, you consent to the jurisdiction and venue of such courts.</p>
 
-                            <p>
-                                Clausо is provided as-is for early-stage MVP use. We do not guarantee results, accuracy,
-                                or
-                                that the service will be uninterrupted. You use the service at your own risk.
-                            </p>
-
-                            <p><strong>6. Termination</strong></p>
-
-                            <p>
-                                We may suspend or terminate your account at any time for violations of these Terms of
-                                Service or misuse of the platform.
-                            </p>
-
-                            <p><strong>7. Changes to Terms</strong></p>
-
-                            <p>
-                                We may update these Terms of Service as the product evolves. The updated terms will be
-                                effective immediately upon posting, and continued use of Clausо constitutes acceptance.
-                            </p>
-
-                            <p><strong>8. Governing Law</strong></p>
-
-                            <p>
-                                These Terms are governed by the laws of the jurisdiction in which Clausо operates. Any
-                                disputes
-                                will be handled under that jurisdiction’s legal framework.
-                            </p>
-
-                            <p><strong>9. Contact</strong></p>
-
-                            <p>
-                                For questions about these Terms of Service, contact:<br/>
-                                <strong>Daniel Ronai</strong><br/>
-                                <a href="mailto:hello@danielsends.email">hello@danielsends.email</a>
-                            </p>
+                            <p className="legal-text">If you have any questions about these Terms of Service or need assistance with your account, please contact us at hello@danielsends.email. We are committed to addressing your concerns and ensuring a positive experience with Clauso.</p>
 
                         </div>
                     </div>
