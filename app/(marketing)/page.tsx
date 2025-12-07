@@ -28,10 +28,10 @@ export default function Home() {
                     <h1 className="hero-header">
                         Never let{" "}
                         <TypingHighlight
-                            words={["risk", "loss", "liability"]}
-                            typingSpeed={180}      // slower typing
-                            deletingSpeed={90}     // slower deleting
-                            pauseDelay={1800}      // wait before deleting and before next word
+                            words={[ "loss", "liability", "risk" ]}
+                            typingSpeed={100}      // slower typing
+                            deletingSpeed={70}     // slower deleting
+                            pauseDelay={2000}      // wait before deleting and before next word
                         />{" "}
                         hit your contracts again.
                     </h1>

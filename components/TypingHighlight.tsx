@@ -48,7 +48,7 @@ export default function TypingHighlight({
                 timeout = setTimeout(() => {
                     setTyping(true);
                     setWordIndex((wordIndex + 1) % words.length);
-                }, pauseDelay / 2);
+                }, pauseDelay / 4);
             }
         }
 
