@@ -31,7 +31,7 @@ export default function WaitlistPricingTables() {
           </div>
           <div className="waitlist-billing-info">Always free</div>
           <ul className="waitlist-features">
-            <li><span className='highlight-p-green'>2 free</span> contract analyses</li>
+            <li>2 free contract analyses</li>
             <li>Basic risk flags</li>
             <li>Standard analysis</li>
             <li>7-day history</li>
@@ -63,8 +63,8 @@ export default function WaitlistPricingTables() {
             <span className="waitlist-toggle-label">Billed annually</span>
           </div>
           <ul className="waitlist-features">
-            <li><span className='highlight-p-green'>15 contracts</span> per month</li>
-            <li><span className='highlight-p-green'>Deep risk</span> analysis</li>
+            <li>15 contracts per month</li>
+            <li>Deep risk analysis</li>
             <li>Clause-by-clause breakdown</li>
             <li>Priority support</li>
           </ul>
@@ -95,7 +95,7 @@ export default function WaitlistPricingTables() {
             <span className="waitlist-toggle-label">Billed annually</span>
           </div>
           <ul className="waitlist-features">
-            <li><span className='highlight-p-green'>100 contracts</span> per month</li>
+            <li>100 contracts per month</li>
             <li>Multi-user access</li>
             <li>Custom risk thresholds</li>
             <li>Slack/API integration</li>

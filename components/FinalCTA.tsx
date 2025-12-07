@@ -109,7 +109,7 @@ const FinalCTA = () => {
       </div>
 
       <p className="final-cta-footnote">
-        Early access launching Februar 2026. First 10 users get lifetime discount.
+        Early access launching March 2026. First 10 users get lifetime discount.
       </p>
 
       {status !== 'idle' && (
