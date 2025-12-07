@@ -1226,168 +1226,233 @@ p {
 
 
 .safety-section {
-          min-height: 100vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 3rem 1rem;
-          background: #ffffff;
-        }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background: #ffffff;
+}
 
-        .safety-container {
-          max-width: 1200px;
-          width: 100%;
-        }
+.safety-container {
+  max-width: 1200px;
+  width: 100%;
+}
 
-        .contract-section-header {
-          font-size: 48px;
-          font-weight: 700;
-          letter-spacing: -1px;
-          margin-bottom: 16px;
-          color: black;
-          text-align: center;
-        }
+.contract-section-header {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+  color: black;
+  text-align: center;
+}
 
-        .contract-section-subheader {
-          font-size: 20px;
-          color: #666;
-          margin-bottom: 60px;
-          line-height: 1.5;
-          text-align: center;
-          max-width: 700px;
-          margin-left: auto;
-          margin-right: auto;
-        }
+.contract-section-subheader {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 60px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-        .safety-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 32px;
-          margin-bottom: 60px;
-        }
+.safety-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
 
-        .safety-card {
-          border: 1px solid #e0e0e0;
-          border-radius: 12px;
-          padding: 32px;
-          transition: transform 0.2s ease, box-shadow 0.2s ease;
-          box-shadow: 
-            0 4px 6px rgba(0, 0, 0, 0.05),
-            0 10px 20px rgba(0, 0, 0, 0.08);
-        }
+.safety-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 10px 20px rgba(0, 0, 0, 0.08);
+}
 
-        .safety-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-        }
+.safety-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
 
-        .safety-icon {
-          font-size: 40px;
-          margin-bottom: 16px;
-        }
+.safety-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
 
-        .safety-card-title {
-          font-size: 20px;
-          font-weight: 600;
-          margin-bottom: 12px;
-          color: black;
-        }
+.safety-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: black;
+}
 
-        .safety-card-description {
-          font-size: 16px;
-          color: #666;
-          line-height: 1.6;
-          margin-bottom: 20px;
-        }
+.safety-card-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 
-        .safety-example {
-          background: white;
-          border-left: 3px solid #fbbf24;
-          padding: 16px;
-          border-radius: 6px;
-          margin-top: 16px;
-        }
+.safety-example {
+  background: white;
+  border-left: 3px solid #fbbf24;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 16px;
+}
 
-        .example-label {
-          font-size: 12px;
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          color: #f59e0b;
-          display: block;
-          margin-bottom: 8px;
-        }
+.example-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #f59e0b;
+  display: block;
+  margin-bottom: 8px;
+}
 
-        .example-text {
-          font-size: 14px;
-          color: #333;
-          margin: 0;
-          line-height: 1.5;
-        }
+.example-text {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
 
-        .safety-footer {
-          display: flex;
-          justify-content: center;
-          padding-top: 40px;
-          border-top: 1px solid #e0e0e0;
-        }
+.safety-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  border-top: 1px solid #e0e0e0;
+}
 
-        .safety-badge {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          background: #fafafa;
-          padding: 24px 32px;
-          border-radius: 12px;
-          border: 1px solid #e0e0e0;
-        }
+.safety-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fafafa;
+  padding: 24px 32px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
 
-        .badge-icon {
-          font-size: 32px;
-        }
+.badge-icon {
+  font-size: 32px;
+}
 
-        .badge-content strong {
-          display: block;
-          font-size: 16px;
-          color: black;
-          margin-bottom: 4px;
-        }
+.badge-content strong {
+  display: block;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 4px;
+}
 
-        .badge-content p {
-          margin: 0;
-          font-size: 14px;
-          color: #666;
-        }
+.badge-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
 
-        @media (max-width: 768px) {
-          .safety-section {
-            padding: 60px 20px;
-          }
+@media (max-width: 768px) {
+  .safety-section {
+    min-height: auto;
+    padding: 40px 16px;
+  }
 
-          .contract-section-header {
-            font-size: 36px;
-          }
+  .contract-section-header {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+  }
 
-          .contract-section-subheader {
-            font-size: 18px;
-            margin-bottom: 40px;
-          }
+  .contract-section-subheader {
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    padding: 0 8px;
+  }
 
-          .safety-grid {
-            grid-template-columns: 1fr;
-            gap: 24px;
-          }
+  .safety-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
 
-          .safety-card {
-            padding: 24px;
-          }
+  .safety-card {
+    padding: 24px 20px;
+  }
 
-          .safety-badge {
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
-          }
-        }
+  .safety-card-title {
+    font-size: 18px;
+  }
+
+  .safety-card-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .safety-example {
+    padding: 14px;
+  }
+
+  .example-text {
+    font-size: 13px;
+  }
+
+  .safety-badge {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .safety-section {
+    padding: 32px 12px;
+  }
+
+  .contract-section-header {
+    font-size: 28px;
+  }
+
+  .contract-section-subheader {
+    font-size: 15px;
+  }
+
+  .safety-card {
+    padding: 20px 16px;
+    border-radius: 10px;
+  }
+
+  .safety-card-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .safety-card-description {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .safety-example {
+    padding: 12px;
+    border-radius: 4px;
+  }
+
+  .example-label {
+    font-size: 11px;
+  }
+
+  .example-text {
+    font-size: 12px;
+  }
+}
 
 .pricing-container {
   margin: 0 auto;
