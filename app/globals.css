@@ -1722,8 +1722,6 @@ p {
   padding-top: 24px;
   border-top: 1px solid #e5e7eb;
   flex-grow: 1;
-  justify-content: center;
-  align-items: center;
 }
 
 .waitlist-features li {
@@ -1762,4 +1760,101 @@ p {
 
 .waitlist-cta-button:active {
   transform: scale(0.98);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .waitlist-pricing-container {
+    padding: 40px 16px;
+  }
+
+  .waitlist-cards-wrapper {
+    gap: 16px;
+  }
+
+  .waitlist-pricing-card {
+    padding: 24px 20px;
+    border-radius: 12px;
+  }
+
+  .waitlist-active-badge {
+    top: 20px;
+    right: 20px;
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  .waitlist-card-header h3 {
+    font-size: 22px;
+  }
+
+  .waitlist-card-header p {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .waitlist-price-amount {
+    font-size: 32px;
+  }
+
+  .waitlist-price-period {
+    font-size: 13px;
+  }
+
+  .waitlist-billing-info {
+    font-size: 13px;
+    margin-bottom: 20px;
+    min-height: 40px;
+  }
+
+  .waitlist-toggle-container {
+    margin-bottom: 20px;
+    min-height: 40px;
+  }
+
+  .waitlist-toggle-label {
+    font-size: 13px;
+  }
+
+  .waitlist-features {
+    padding-top: 20px;
+  }
+
+  .waitlist-features li {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .waitlist-cta-button {
+    padding: 11px;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .waitlist-pricing-container {
+    padding: 32px 12px;
+  }
+
+  .waitlist-pricing-card {
+    padding: 20px 16px;
+  }
+
+  .waitlist-card-header h3 {
+    font-size: 20px;
+  }
+
+  .waitlist-card-header p {
+    font-size: 12px;
+  }
+
+  .waitlist-price-amount {
+    font-size: 28px;
+  }
+
+  .waitlist-features li {
+    font-size: 13px;
+    padding: 7px 0;
+  }
 }
