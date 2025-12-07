@@ -1487,3 +1487,176 @@ p {
   }
 }
 
+/* Waitlist Pricing Tables Styles */
+.waitlist-pricing-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.waitlist-cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .waitlist-cards-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.waitlist-pricing-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.waitlist-pricing-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.waitlist-active-badge {
+  position: absolute;
+  top: 24px;
+  right: 28px;
+  background: #000;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.waitlist-card-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+}
+
+.waitlist-card-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.waitlist-price {
+  margin-bottom: 12px;
+}
+
+.waitlist-price-amount {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+.waitlist-price-period {
+  font-size: 14px;
+  color: #6b7280;
+  margin-left: 2px;
+}
+
+.waitlist-billing-info {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 24px;
+  min-height: 44px;
+}
+
+.waitlist-toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  min-height: 44px;
+}
+
+.waitlist-toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background: #d1d5db;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.waitlist-toggle-switch.active {
+  background: #000;
+}
+
+.waitlist-toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.waitlist-toggle-switch.active .waitlist-toggle-knob {
+  transform: translateX(20px);
+}
+
+.waitlist-toggle-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.waitlist-features {
+  list-style: none;
+  margin-bottom: auto;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.waitlist-features li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: #1a1a1a;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.waitlist-features li::before {
+  content: "✓";
+  color: #6b7280;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.waitlist-cta-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #000;
+  color: #fff;
+  margin-top: 24px;
+}
+
+.waitlist-cta-button:hover {
+  background: #2a2a2a;
+}
+
+.waitlist-cta-button:active {
+  transform: scale(0.98);
+}

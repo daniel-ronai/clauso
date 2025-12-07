@@ -11,6 +11,7 @@ import SummarySection from "@/components/SummarySection";
 import SafetyNetSection from "@/components/SafetyNetSection";
 import { PricingTable } from "@clerk/nextjs";
 import FinalCTA from "@/components/FinalCTA";
+import PricingSection from "@/components/PricingSection";
 
 export default function Home() {
   return (
@@ -85,20 +86,10 @@ export default function Home() {
                 </p>
             </div>
         </section>
-        
-        <section className="section" style={{paddingBottom: "8rem"}}>
-            <div className="pricing-container">
-            <h2 className="contract-section-header">Clear pricing. No fine print.</h2>
-            <p className="contract-section-subheader">
-                Ironic? Maybe. But you deserve to know exactly what you're getting.
-            </p>
-            </div>
-            <div className="pricing-to-look-good">
-                <PricingTable />
-            </div>
-        </section>
 
-        <section className="cta-section" style={{paddingBottom: "4rem"}}>
+        <PricingSection />
+
+        <section id='join-waitlist' className="cta-section" style={{paddingBottom: "4rem"}}>
             <FinalCTA />
         </section>
     </div>
