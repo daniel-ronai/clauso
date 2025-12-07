@@ -9,7 +9,7 @@ export default function WaitlistPricingTables() {
 
   const prices = {
     pro: { monthly: 29, annual: 19 },
-    team: { monthly: 89, annual: 59 }
+    team: { monthly: 99, annual: 79 }
   };
 
   const handleJoinWaitlist = () => {
@@ -24,16 +24,17 @@ export default function WaitlistPricingTables() {
           <div className="waitlist-card-header">
             <span className="waitlist-active-badge">Active</span>
             <h3>Starter</h3>
-            <p>For testing the waters.</p>
+            <p>For individuals testing the waters</p>
           </div>
           <div className="waitlist-price">
             <span className="waitlist-price-amount">$0</span>
           </div>
           <div className="waitlist-billing-info">Always free</div>
           <ul className="waitlist-features">
-            <li>10 Free Analyses</li>
-            <li><span className='highlight-p-green'>Dashboard</span> Access</li>
-            <li>Analysis History</li>
+            <li><span className='highlight-p-green'>2 free</span> contract analyses</li>
+            <li>Basic risk flags</li>
+            <li>Standard analysis</li>
+            <li>7-day history</li>
           </ul>
           <button className="waitlist-cta-button" onClick={handleJoinWaitlist}>
             Join Waitlist
@@ -43,8 +44,8 @@ export default function WaitlistPricingTables() {
         {/* Pro Plan */}
         <div className="waitlist-pricing-card">
           <div className="waitlist-card-header">
-            <h3>Pro</h3>
-            <p>For professionals.</p>
+            <h3>Professional</h3>
+            <p>Most popular for solopreneurs</p>
           </div>
           <div className="waitlist-price">
             <span className="waitlist-price-amount">
@@ -62,9 +63,10 @@ export default function WaitlistPricingTables() {
             <span className="waitlist-toggle-label">Billed annually</span>
           </div>
           <ul className="waitlist-features">
-            <li><span className='highlight-p-green'>Unlimited</span> Analyses</li>
-            <li>Export & Downloads</li>
-            <li>Priority Support</li>
+            <li><span className='highlight-p-green'>15 contracts</span> per month</li>
+            <li><span className='highlight-p-green'>Deep risk</span> analysis</li>
+            <li>Clause-by-clause breakdown</li>
+            <li>Priority support</li>
           </ul>
           <button className="waitlist-cta-button" onClick={handleJoinWaitlist}>
             {isAnnual ? 'Join Waitlist' : 'Join Waitlist'}
@@ -74,8 +76,8 @@ export default function WaitlistPricingTables() {
         {/* Team Plan */}
         <div className="waitlist-pricing-card">
           <div className="waitlist-card-header">
-            <h3>Team</h3>
-            <p>For growing businesses.</p>
+            <h3>Business</h3>
+            <p>For growing teams</p>
           </div>
           <div className="waitlist-price">
             <span className="waitlist-price-amount">
@@ -93,9 +95,10 @@ export default function WaitlistPricingTables() {
             <span className="waitlist-toggle-label">Billed annually</span>
           </div>
           <ul className="waitlist-features">
-            <li><span className='highlight-p-green'>Everything</span> in Pro</li>
-            <li>Organization Dashboard</li>
-            <li>Multi-user Access</li>
+            <li><span className='highlight-p-green'>100 contracts</span> per month</li>
+            <li>Multi-user access</li>
+            <li>Custom risk thresholds</li>
+            <li>Slack/API integration</li>
           </ul>
           <button className="waitlist-cta-button" onClick={handleJoinWaitlist}>
             {isAnnual ? 'Join Waitlist' : 'Join Waitlist'}
