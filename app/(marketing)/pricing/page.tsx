@@ -1,5 +1,6 @@
 import React from 'react';
 import {PricingTable} from "@clerk/nextjs";
+import WaitlistPricingTables from '@/components/WaitlistPricingTables';
 
 const Pricing = () => {
     return (
@@ -16,7 +17,8 @@ const Pricing = () => {
                 </div>
             </section>
             <div className="pricing-tables">
-                <PricingTable />
+                {/*<PricingTable />*/}
+                <WaitlistPricingTables />
             </div>
             </div>
         </div>
