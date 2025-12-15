@@ -20,8 +20,8 @@ export default function Home() {
             <div className="content-container">
                 <div className="content-text">
                     <div className="bubble-text">
-                        <Link href='/'>
-                            🔥 Join the <span className="gold-shine">waitlist</span>
+                        <Link href='/#learn-more'>
+                            🔥 Learn <span className="gold-shine">more</span>
                         </Link>
                     </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
             </div>
         </section>
         <section className="section">
-            <div className="hook-container">
+            <div id="learn-more" className="hook-container">
                 <p className="hook-text">
                     It was written in legalese. <br />
                     Anything could be buried in there. <br />
